@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Home Prediction Modal</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <h1 class="oswald ">Home Price Prediction</h1>
+    <div class="box">
+        <form action="" method="post">
+            <div>
+                <label for="">Enter House Area:</label><br>
+                <input type="number" name="area" id="">
+            </div>
+            <div>
+                <label for="">Enter Number of Bederooms:</label><br>
+                <input type="number" name="bed" id="">
+            </div>
+
+            <div>
+                <label for="">Enter Number of Bathrooms</label><br>
+                <input type="number" name="bath" id="">
+            </div>
+
+            <div>
+                <label for="">Enter Parking Car Number</label><br>
+                <input type="number" name="parking" id="">
+            </div>
+            <br>
+            <br>
+            
+            <div>
+                <input type="submit" value="Predict" class="btn">   
+            </div>
+
+                <h1 lass="oswald">Home Price: {{ prediction }}</h1>
+            
+        </form>
+         
+    </div>
+
+
+</body>
+</html>
